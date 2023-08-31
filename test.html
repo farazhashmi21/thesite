@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Document</title>
-     <!-- Latest compiled and minified CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-     <!-- Latest compiled JavaScript -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script></head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS for the hero section */
+    .hero {
+      background-image: url('assets/img/hero-section-background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      height: 100vh; /* Set the height to viewport height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .hero .btn {
+      font-size: 1.2rem;
+      padding: 10px 20px;
+    }
+  </style>
+</head>
 <body>
-    <header>
-        <div class="container text-center text-primary">
-            <h1 class="">Hello World</h1>
-            <p class="">Lets Practice</p>
-        </div>
-    </header>
-        <nav>
-            <ul>
-                <li><a href="test.html" title="Homepage">Home</a></li>
-            </ul>
-        </nav>
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-sm-4 py-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut expedita veritatis quasi odit, quibusdam numquam itaque eligendi odio ipsum libero accusantium unde blanditiis hic illum necessitatibus omnis voluptate enim iste?</p>
-                </div>
-                <div class="col-sm-4 py-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut expedita veritatis quasi odit, quibusdam numquam itaque eligendi odio ipsum libero accusantium unde blanditiis hic illum necessitatibus omnis voluptate enim iste?</p>
-                </div>
-                <div class="col-sm-4 py-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut expedita veritatis quasi odit, quibusdam numquam itaque eligendi odio ipsum libero accusantium unde blanditiis hic illum necessitatibus omnis voluptate enim iste?</p>
-                </div>
-                <div class="col-sm-4 py-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut expedita veritatis quasi odit, quibusdam numquam itaque eligendi odio ipsum libero accusantium unde blanditiis hic illum necessitatibus omnis voluptate enim iste?</p>
-                </div>
-                <div class="col-sm-4 py-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut expedita veritatis quasi odit, quibusdam numquam itaque eligendi odio ipsum libero accusantium unde blanditiis hic illum necessitatibus omnis voluptate enim iste?</p>
-                </div>
-                <div class="col-sm-4 py-5">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut expedita veritatis quasi odit, quibusdam numquam itaque eligendi odio ipsum libero accusantium unde blanditiis hic illum necessitatibus omnis voluptate enim iste?</p>
-                </div>            </div>
-        </section>
-        <footer class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <p class="text-center">Copyright - &#169; - <script>document.write(new Date().getFullYear());</script></p>
-                </div>
-            </div>
-        </footer>
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Our Website</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque justo ut nisi vehicula, eget faucibus lorem aliquam.</p>
+      <a href="#" class="btn btn-primary">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Link to Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
