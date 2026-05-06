@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>Portfolio | The Site</title>
     <link rel="stylesheet" href="assets/css/portfolio.css">
-</head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <header class="portfolio-header">
+      <div class="portfolio-brand">
+        <h1>The Site Portfolio</h1>
+        <p>Share your work with a modern look and purposeful structure.</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    
-    <section id="about">
+
+    <section id="about" class="portfolio-section">
+      <div class="section-content">
         <h2>About Me</h2>
-        <!-- Your about me content here -->
+        <p>I create simple, thoughtful web pages that communicate clearly and look polished on every device. This portfolio is built to help your first projects feel intentional.</p>
+      </div>
     </section>
-    
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Your portfolio content here -->
+
+    <section id="portfolio" class="portfolio-section portfolio-work">
+      <h2>Featured Work</h2>
+      <div class="work-grid">
+        <article class="work-card">
+          <h3>Project One</h3>
+          <p>A clean landing page designed to introduce a product, service, or personal brand.</p>
+        </article>
+        <article class="work-card">
+          <h3>Project Two</h3>
+          <p>A responsive feature showcase with a modern information hierarchy and strong visuals.</p>
+        </article>
+        <article class="work-card">
+          <h3>Project Three</h3>
+          <p>A lightweight portfolio layout for sharing skills, case studies, and contact details.</p>
+        </article>
+      </div>
     </section>
-    
-    <section id="contact">
+
+    <section id="contact" class="portfolio-section">
+      <div class="section-content">
         <h2>Contact</h2>
-        <!-- Your contact form or information here -->
+        <p>Let’s connect. Email <a href="mailto:hello@example.com">hello@example.com</a> to talk about your next project.</p>
+      </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2023 Your Name</p>
+
+    <footer class="portfolio-footer">
+      <p>&copy; <span id="portfolio-year"></span> The Site. Crafted with clarity.</p>
     </footer>
-</body>
+
+    <script>
+      document.getElementById('portfolio-year').textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
